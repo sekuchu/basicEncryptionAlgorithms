@@ -1,2 +1,2 @@
 # basicEncryption
-A personal re-implementation of already existing algorithms
+A personal re-implementation of already existing encryption algorithms in CPP.
