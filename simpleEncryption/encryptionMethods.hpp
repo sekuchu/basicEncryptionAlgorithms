@@ -27,11 +27,12 @@ void caesarCipher(string input) {	// encryption based on shifting each letter by
 	cout << "Encrypted string: " << input << endl;	// output
 }
 
-void vigenereCipher(string input) {
-	string secondInput = "";
+void vigenereCipher(string input) {		// encryption based on adding the alphabetical number of the corresponding letter 
+	string secondInput = "";											// position from the second string onto the first
+	int add = 0;
 	int stepOver = 0;
 	
-	while (input.length() != secondInput.length()) {
+	while (input.length() != secondInput.length()) {	// second word input system
 		cout << "Please enter your second string (must be the same size): ";
 		cin >> secondInput;
 
@@ -39,11 +40,16 @@ void vigenereCipher(string input) {
 		cin.ignore(numeric_limits<streamsize>::max(), '\n'); // order to enable further re-input
 	}
 
-	for (int i = 0; i < input.length(); i++) {
+	for (int i = 0; i < input.length(); i++) {	
 		input[i] = tolower(input[i]);
-		stepOver = 123 - input[i];
-		if (stepOver <= 3) input[i] = 122 - (25 + stepOver);
-		input[i] += 3;
+		secondInput[i] = tolower(secondInput[i]);	// we need to lower both words onto the same ascii number category
+
+		add = secondInput[i] - 96;	// calculate how many letter do we shift the corresponding letter of the first word
+		stepOver = 123 - input[i];	// math to check for stepOvers (if we go over the last letter)
+		if (stepOver <= add) input[i] = 97 + (add - stepOver);	// stepOver logic check
+		else input[i] += add;	// shift by the number of letters as per encryption algorithm if there is no overStep
 	}
+
+	cout << "Encrypted string: " << input << endl;	// output
 }
 #endif 
