@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\simpleEncryption\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D3801C-7553-4DC7-88F0-511CFF3486B9}|simpleEncryption\\simpleEncryption.vcxproj|C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\simpleEncryption.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8D3801C-7553-4DC7-88F0-511CFF3486B9}|simpleEncryption\\simpleEncryption.vcxproj|solutionrelative:simpleEncryption\\simpleEncryption.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D3801C-7553-4DC7-88F0-511CFF3486B9}|simpleEncryption\\simpleEncryption.vcxproj|C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\encryptionMethods.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F8D3801C-7553-4DC7-88F0-511CFF3486B9}|simpleEncryption\\simpleEncryption.vcxproj|solutionrelative:simpleEncryption\\encryptionMethods.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "encryptionMethods.hpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\encryptionMethods.hpp",
+              "RelativeDocumentMoniker": "simpleEncryption\\encryptionMethods.hpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\encryptionMethods.hpp",
+              "RelativeToolTip": "simpleEncryption\\encryptionMethods.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-09T21:30:09.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "simpleEncryption.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\simpleEncryption.cpp",
+              "RelativeDocumentMoniker": "simpleEncryption\\simpleEncryption.cpp",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\simpleEncryption\\simpleEncryption\\simpleEncryption.cpp",
+              "RelativeToolTip": "simpleEncryption\\simpleEncryption.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-09T14:37:16.581Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

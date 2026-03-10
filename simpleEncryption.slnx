@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="simpleEncryption/simpleEncryption.vcxproj" Id="f8d3801c-7553-4dc7-88f0-511cff3486b9" />
+</Solution>
