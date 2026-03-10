@@ -24,6 +24,7 @@
     <ProjectGuid>{f8d3801c-7553-4dc7-88f0-511cff3486b9}</ProjectGuid>
     <RootNamespace>simpleEncryption</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>basicEncryptionAlgorithms</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
