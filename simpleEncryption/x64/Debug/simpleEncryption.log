@@ -1,3 +1,0 @@
-﻿  simpleEncryption.cpp
-C:\Users\User\source\repos\simpleEncryption\simpleEncryption\simpleEncryption.cpp(83,1): warning C4715: 'executeChoice': not all control paths return a value
-  simpleEncryption.vcxproj -> C:\Users\User\source\repos\simpleEncryption\x64\Debug\simpleEncryption.exe
