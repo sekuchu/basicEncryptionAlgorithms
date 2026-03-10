@@ -62,7 +62,7 @@ int executeChoice(int choice) {	// encypher executer function && exit
 		vigenereCipher(input);
 		break;
 	case 4:
-		//atbashCipher(input);
+		atbashCipher(input);
 		break;
 	case 5:
 		//rot13Cipher(input);

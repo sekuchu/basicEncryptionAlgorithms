@@ -52,4 +52,14 @@ void vigenereCipher(string input) {		// encryption based on adding the alphabeti
 
 	cout << "Encrypted string: " << input << endl;	// output
 }
+
+void atbashCipher(string input) {
+
+
+}
+
+
+
+
+
 #endif 
