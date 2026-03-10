@@ -1,0 +1,52 @@
+# Build results
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# Visual Studio cache/options
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compiled objects
+*.obj
+*.o
+*.lo
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.log
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake (if used)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio generated files
+*.ipch
+*.aps
+*.ncb
+*.opendb
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
