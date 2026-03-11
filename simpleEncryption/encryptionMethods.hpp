@@ -54,11 +54,27 @@ void vigenereCipher(string input) {		// encryption based on adding the alphabeti
 }
 
 void atbashCipher(string input) {
+	string reverse = "zyxwvutsrqponmlkjihgfedcba";
 
+	for (int i = 0; i < input.length(); i++) {	// go trough all of the letters
+		input[i] = tolower(input[i]);
 
+		input[i] = reverse[abs(97 - input[i])];	// find what place the letter is and go to that place in reverse
+	}
+
+	cout << "Encrypted string: " << input << endl;	// output
 }
 
-
+void rot13Cipher(string input) { // encryption based on shifting each letter by 13 letters, its identical to ceasar
+	int stepOver = 0;	
+	for (int i = 0; i < input.length(); i++) {	
+		input[i] = tolower(input[i]);	
+		stepOver = 123 - input[i];	
+		if (stepOver <= 13) input[i] = 122 - (25 + stepOver);	
+		input[i] += 13;	
+	}
+	cout << "Encrypted string: " << input << endl;	// output
+}
 
 
 

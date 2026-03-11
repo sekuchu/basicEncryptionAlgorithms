@@ -65,7 +65,7 @@ int executeChoice(int choice) {	// encypher executer function && exit
 		atbashCipher(input);
 		break;
 	case 5:
-		//rot13Cipher(input);
+		rot13Cipher(input);
 		break;
 	case 6:
 		//morseCode(input);
