@@ -36,14 +36,15 @@ void message() {	// hardcoded message function
 	cout << "6. Morse code" << endl;
 	cout << "7. Binary code" << endl;
 	cout << "8. Password based encryption" << endl;
-	cout << "9. Exit" << endl;
+	cout << "9. Qwerty Encryption" << endl;
+	cout << "10. Exit" << endl;
 	cout << endl;
 }
 
 int executeChoice(int choice) {	// encypher executer function && exit
 	string input;
 
-	if(choice != 9){
+	if(choice != 10){
 		cout << "Enter a string to encrypt: ";
 		cin >> input;
 	}
@@ -71,12 +72,15 @@ int executeChoice(int choice) {	// encypher executer function && exit
 		morseCode(input);
 		break;
 	case 7:
-		//binaryCode(input);
+		binaryCode(input);
 		break;
 	case 8:
-		//passwordBasedEncryption(input);
+		passwordBasedEncryption(input);
 		break;
 	case 9:
+		qwertyEncryption(input);
+		break;
+	case 10:
 		cout << "Exiting the program. Goodbye!" << endl;
 		return 0;
 	}

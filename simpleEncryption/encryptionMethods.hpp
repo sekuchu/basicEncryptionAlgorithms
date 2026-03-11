@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <unordered_map>
+#include <bitset>
 
 using namespace std;
 
@@ -80,7 +81,7 @@ void rot13Cipher(string input) { // encryption based on shifting each letter by 
 void morseCode(string input) {
 	string morseCode = "";
 
-	unordered_map<char, string> morse = {
+	unordered_map<char, string> morse = {	// basicaly a dictionary with key - value pairs that correspond each letters to its morse code
 	{'a', ".-"}, {'b', "-..."}, {'c', "-.-."}, {'d', "-.."}, {'e', "."}, {'f', "..-."}, {'g', "--."},
 	{'h', "...."}, {'i', ".."}, {'j', ".---"}, {'k', "-.-"}, {'l', ".-.."}, {'m', "--"}, {'n', "-."},
 	{'o', "---"}, {'p', ".--."}, {'q', "--.-"}, {'r', ".-."}, {'s', "..."}, {'t', "-"}, {'u', "..-"},
@@ -89,12 +90,40 @@ void morseCode(string input) {
 
 	for (int i = 0; i < input.length(); i++) {
 		input[i] = tolower(input[i]);
-		morseCode.append(morse[input[i]]);
-		morseCode.append(" ");
+		morseCode.append(morse[input[i]]);	// just insert the corresponding morse code instead of the letter
+		morseCode.append(" ");	// add a space for each letter
 	}
 
 	cout << "Encrypted string: " << morseCode << endl;	// output
 }
 
+void binaryCode(string input) {	// converts text to binary
+	string binaryRepresentation = "";	// output string
+	string binaryString = "";	// temporary filler string
+	for (int i = 0; i < input.length(); i++) {
+		bitset<8> binary(input[i]);	// turn the letter into binary
+		binaryString = binary.to_string();	// turn the binary into a usable string
+		binaryRepresentation.append(binaryString);	// append the string onto the output
+		binaryRepresentation.append(" ");	// add a space for each letter
+	}
 
+	cout << "Encrypted string: " << binaryRepresentation << endl;	// output
+	
+}
+
+void passwordBasedEncryption(string input) {
+
+}
+
+void qwertyEncryption(string input) {
+	string qwerty = "qgde3rty8uiojh9014w57f2s6a";
+
+	for (int i = 0; i < input.length(); i++) {	// go trough all of the letters
+		input[i] = tolower(input[i]);
+
+		input[i] = qwerty[abs(97 - input[i])];	// find what place the letter is and go to that placeholder for qwerty
+	}
+
+	cout << "Encrypted string: " << input << endl;	// output
+}
 #endif 
