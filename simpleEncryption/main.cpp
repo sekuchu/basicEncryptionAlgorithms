@@ -68,7 +68,7 @@ int executeChoice(int choice) {	// encypher executer function && exit
 		rot13Cipher(input);
 		break;
 	case 6:
-		//morseCode(input);
+		morseCode(input);
 		break;
 	case 7:
 		//binaryCode(input);

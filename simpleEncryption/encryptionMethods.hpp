@@ -2,6 +2,7 @@
 #define encryptionMethods_hpp
 
 #include <iostream>
+#include <unordered_map>
 
 using namespace std;
 
@@ -76,6 +77,24 @@ void rot13Cipher(string input) { // encryption based on shifting each letter by 
 	cout << "Encrypted string: " << input << endl;	// output
 }
 
+void morseCode(string input) {
+	string morseCode = "";
+
+	unordered_map<char, string> morse = {
+	{'a', ".-"}, {'b', "-..."}, {'c', "-.-."}, {'d', "-.."}, {'e', "."}, {'f', "..-."}, {'g', "--."},
+	{'h', "...."}, {'i', ".."}, {'j', ".---"}, {'k', "-.-"}, {'l', ".-.."}, {'m', "--"}, {'n', "-."},
+	{'o', "---"}, {'p', ".--."}, {'q', "--.-"}, {'r', ".-."}, {'s', "..."}, {'t', "-"}, {'u', "..-"},
+	{'v', "...-"}, {'w', ".--"}, {'x', "-..-"}, {'y', "-.--"}, {'z', "--.."}
+	};
+
+	for (int i = 0; i < input.length(); i++) {
+		input[i] = tolower(input[i]);
+		morseCode.append(morse[input[i]]);
+		morseCode.append(" ");
+	}
+
+	cout << "Encrypted string: " << morseCode << endl;	// output
+}
 
 
 #endif 
