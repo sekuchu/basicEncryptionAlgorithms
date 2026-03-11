@@ -111,10 +111,6 @@ void binaryCode(string input) {	// converts text to binary
 	
 }
 
-void passwordBasedEncryption(string input) {
-
-}
-
 void qwertyEncryption(string input) {
 	string qwerty = "qgde3rty8uiojh9014w57f2s6a";
 
